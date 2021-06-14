@@ -28,7 +28,7 @@ export default {
   },
   async created () {
     const item = await axios. get(
-      'https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&appid=7cd8c4fe5b277a358301b0b821045900'
+      `https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&appid=7cd8c4fe5b277a358301b0b821045900`
     );
     const weatherData = item.data;
     this.name = weatherData.name;
